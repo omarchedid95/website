@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
     <head>
+        <!-- Required meta tags -->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'>
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css2?family=Cinzel&display=swap' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
         <!-- Styles -->
-        <link rel="stylesheet" href="index.css">
+        <link rel='stylesheet' href='index.css'>
     </head>
     <body>
         <header>
-
+          <!-- This menu is render for desktops -->
+          <div class='container-fluid desktop-menu-wrapper'>
+              <div class='row'>
+                  <li class='col'><a href='#home'>home</a></li>
+                  <li class='col'><a href='#about-me'>about me</a></li>
+                  <li class='col'><a href='#posts'>posts</a></li>
+                  <li class='col'><a href='#contact-me'>contact</a></li>
+              </div>
+          </div>
         </header>
         <main>
-            <h2 class='title'>Omar Chedid</h2>
-            <img src='assets/omar-chedid.jpg' class='avatar' />
+            <section class='container-fluid main-section'>
+              <h2 class='title'>Welcome!</h2>
+              <img src='assets/omar-chedid.jpg' class='avatar' />
+              <div class='introduction'>
+                <p>
+                  My name is Omar Chedid and I'm a software engineer living in San Francisco. At the moment,
+                  I'm working for <b>Cisco Systems</b> as a DevSecOps engineer. I'll be using this website to
+                  post articles about my most recent projects and interest. Topics will mainly cover software development,
+                  security, infrastructure deployment, and automation!
+                </p>
+              </div>
+            </section>
         </main>
         <footer>
 

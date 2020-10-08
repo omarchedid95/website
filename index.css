@@ -1,22 +1,62 @@
+/* 
+--rosewood: #4f000bff;
+--claret: #720026ff;
+--brick-red: #ce4257ff;
+--coral: #ff7f51ff;
+--sandy-brown: #ff9b54ff;
+*/
+/* Start of main css */
 * {
     margin: 0;
     padding: 0;
-    background-color: none;
+}
+body {
+    background-color: black;
     background-image: url('assets/san-francisco.jpg');
     background-position: 0 center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-origin: border-box;
+    z-index: -5;
 }
 
 /* ----------- Desktop ----------- */
-.title {
+.desktop-menu-wrapper {
+    height: 80px;
+    width: 1000px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 24px;
+    background: rgba(204, 204, 204, 0.05);
+}
+.desktop-menu-wrapper div li {
+    list-style-type: none;
+}
+.desktop-menu-wrapper div li a{
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #720026ff;
+}
+.main-section {
+    width: 1000px;
+    margin-top: 80px;
+}
+.main-section .title {
+    margin-left: auto;
+    margin-right: auto;
     font-size: 80px;
+    color: #720026;
     text-align: center;
     font-family: 'Cinzel', serif;
 }
-.avatar {
+.main-section img.avatar {
     width: 400px;
     border-radius: 50%;
     display: block;
@@ -24,23 +64,129 @@
     margin-right: auto;
     border-style: none;
 }
+.main-section .introduction {
+    margin-top: 16px;
+}
+.main-section .introduction p {
+    font-family: 'Mukta', sans-serif;
+    font-size: 30px;
+    color: #4f000bff;
+    padding: 8px;
+    background: rgb(204, 204, 204); /* Fallback */
+    background: rgba(204, 204, 204, 0.9);
+    border-radius: 24px;
+
+}
 /* ----------- iPhone X ----------- */
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) {
-    .title {
-        font-size: 100px;
-        text-align: center;
-        font-family: 'Cinzel', serif;
+and (device-width : 375px) 
+and (device-height : 812px)
+and (-webkit-device-pixel-ratio : 3)
+{
+    .desktop-menu-wrapper {
+        display: none;
     }
-    .avatar {
-        width: 800px;
-        border-radius: 50%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-style: none;
+    .main-section {
+        width: 375px;
+        margin-top: 20px;
+    }
+    .main-section .title {
+        font-size: 65px;
+    }
+    .main-section img.avatar {
+        width: 350px;
+    }
+    .main-section .introduction p {
+        font-size: 24px;
+    }
+}
+/* ----------- iPhone 6,7,8 Plus----------- */
+@media only screen 
+and (device-width : 414px) 
+and (device-height : 736px)
+{
+    .desktop-menu-wrapper {
+        display: none;
+    }
+    .main-section {
+        width: 414px;
+        margin-top: 20px;
+    }
+    .main-section .title {
+        font-size: 70px;
+    }
+    .main-section img.avatar {
+        width: 370px;
+    }
+    .main-section .introduction p {
+        font-size: 24px;
     }
 
+}
+/* ----------- iPhone 6,7,8 ----------- */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px)
+{
+    .desktop-menu-wrapper {
+        display: none;
+    }
+    .main-section {
+        width: 414px;
+        margin-top: 20px;
+    }
+    .main-section .title {
+        font-size: 70px;
+    }
+    .main-section img.avatar {
+        width: 370px;
+    }
+    .main-section .introduction p {
+        font-size: 24px;
+    }
+
+}
+/* ----------- iPhone 5,5s ----------- */
+@media only screen 
+and (device-width : 320px) 
+and (device-height : 568px)
+{
+    .desktop-menu-wrapper {
+        display: none;
+    }
+    .main-section {
+        width: 414px;
+        margin-top: 20px;
+    }
+    .main-section .title {
+        font-size: 70px;
+    }
+    .main-section img.avatar {
+        width: 370px;
+    }
+    .main-section .introduction p {
+        font-size: 24px;
+    }
+}
+/* ----------- iPhone 4,4s ----------- */
+@media only screen 
+and (device-width : 320px) 
+and (device-height : 480px)
+{
+    .desktop-menu-wrapper {
+        display: none;
+    }
+    .main-section {
+        width: 414px;
+        margin-top: 20px;
+    }
+    .main-section .title {
+        font-size: 70px;
+    }
+    .main-section img.avatar {
+        width: 370px;
+    }
+    .main-section .introduction p {
+        font-size: 24px;
+    }
 }
