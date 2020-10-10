@@ -33,6 +33,11 @@ body {
     padding-right: 24px;
     border-radius: 24px;
     background: rgba(204, 204, 204, 0.05);
+    animation-name: appear;
+    animation-duration: 2.3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
 }
 .desktop-menu-wrapper div li {
     list-style-type: none;
@@ -46,7 +51,7 @@ body {
 }
 .main-section {
     width: 1000px;
-    margin-top: 80px;
+    margin-top: 48px;
 }
 .main-section .title {
     margin-left: auto;
@@ -55,6 +60,11 @@ body {
     color: #720026;
     text-align: center;
     font-family: 'Cinzel', serif;
+    animation-name: enterLeft;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
 }
 .main-section img.avatar {
     width: 400px;
@@ -63,8 +73,27 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-style: none;
+    box-shadow: 0px 0px 10px 12px rgba(0,0,0);
+    box-shadow: 0px 0px 10px 12px rgba(0,0,0,0.2);
+    animation-name: float;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.main-section .avatar-wrapper {
+    animation-name: appear;
+    animation-duration: 2.3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
 }
 .main-section .introduction {
+    animation-name: enterRight;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
     margin-top: 16px;
 }
 .main-section .introduction p {
@@ -188,5 +217,43 @@ and (device-height : 480px)
     }
     .main-section .introduction p {
         font-size: 24px;
+    }
+}
+/* ----------- Animations ----------- */
+/* Floating avatar */
+@keyframes float {
+	0% {
+        transform: translatey(0px);
+	}
+	50% {
+        transform: translatey(-15px);
+	}
+	100% {
+        transform: translatey(0px);
+	}
+}
+@keyframes appear {
+    0% {
+        opacity: 0%;
+	}
+	100% {
+        opacity: 100%;
+	}
+}
+/* Enter the main section */
+@keyframes enterLeft {
+    0% {
+        transform: translateX(-5000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes enterRight {
+    0% {
+        transform: translateX(5000px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }
