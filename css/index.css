@@ -18,21 +18,36 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-origin: border-box;
-    z-index: -5;
+    height: 100vh;
 }
 
 /* ----------- Desktop ----------- */
-.desktop-menu-wrapper {
-    height: 80px;
+/* Main wrappers */
+header {
+    height: 10%;
     width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main {
+    height: 80%;
+    width: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    padding: 0;
+}
+footer {
+    height: 10%;
+    text-align: center;
+}
+/* Desktop menu */
+.desktop-menu-wrapper {
     margin-top: 16px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 24px;
     border-radius: 24px;
-    background: rgba(204, 204, 204, 0.05);
+    background: rgba(204, 204, 204, 0.15);
     animation-name: appear;
     animation-duration: 2.3s;
     animation-delay: 0s;
@@ -49,9 +64,13 @@ body {
     text-decoration: none;
     color: #720026ff;
 }
-.main-section {
+main section {
+    height: 100%;
     width: 1000px;
-    margin-top: 48px;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    scroll-snap-align: start;
 }
 .main-section .title {
     margin-left: auto;
@@ -104,6 +123,17 @@ body {
     background: rgb(204, 204, 204); /* Fallback */
     background: rgba(204, 204, 204, 0.9);
     border-radius: 24px;
+}
+.services-section {
+    scroll-snap-align: start;
+    opacity: 70%;
+    background-color: #720026ff;
+}
+/* ----------- 1366x768 ----------- */
+@media only screen
+and (device-width : 1366px) 
+and (device-height : 768px)
+{
 
 }
 /* ----------- iPhone X ----------- */
@@ -112,12 +142,15 @@ and (device-width : 375px)
 and (device-height : 812px)
 and (-webkit-device-pixel-ratio : 3)
 {
-    .desktop-menu-wrapper {
-        display: none;
-    }
-    .main-section {
+    main {
         width: 375px;
-        margin-top: 20px;
+        height: 780px;
+    }
+    main section {
+        width: 100%;
+    }
+    footer {
+        height: 32px;
     }
     .main-section .title {
         font-size: 65px;
@@ -134,12 +167,15 @@ and (-webkit-device-pixel-ratio : 3)
 and (device-width : 414px) 
 and (device-height : 736px)
 {
-    .desktop-menu-wrapper {
-        display: none;
-    }
-    .main-section {
+    main {
         width: 414px;
-        margin-top: 20px;
+        height: 700px;
+    }
+    main section {
+        width: 100%;
+    }
+    footer {
+        height: 32px;
     }
     .main-section .title {
         font-size: 70px;
@@ -155,23 +191,26 @@ and (device-height : 736px)
 /* ----------- iPhone 6,7,8 ----------- */
 @media only screen 
 and (min-device-width : 375px) 
-and (max-device-width : 667px)
+and (max-device-height : 667px)
 {
-    .desktop-menu-wrapper {
-        display: none;
+    main {
+        width: 375px;
+        height: 640px;
     }
-    .main-section {
-        width: 414px;
-        margin-top: 20px;
+    main section {
+        width: 100%;
+    }
+    footer {
+        height: 32px;
     }
     .main-section .title {
-        font-size: 70px;
+        font-size: 60px;
     }
     .main-section img.avatar {
-        width: 370px;
+        width: 350px;
     }
     .main-section .introduction p {
-        font-size: 24px;
+        font-size: 22px;
     }
 
 }
@@ -180,21 +219,24 @@ and (max-device-width : 667px)
 and (device-width : 320px) 
 and (device-height : 568px)
 {
-    .desktop-menu-wrapper {
-        display: none;
+    main {
+        width: 320px;
+        height: 530px;
     }
-    .main-section {
-        width: 414px;
-        margin-top: 20px;
+    main section {
+        width: 100%;
+    }
+    footer {
+        height: 32px;
     }
     .main-section .title {
-        font-size: 70px;
+        font-size: 50px;
     }
     .main-section img.avatar {
-        width: 370px;
+        width: 300px;
     }
     .main-section .introduction p {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 /* ----------- iPhone 4,4s ----------- */
@@ -202,21 +244,24 @@ and (device-height : 568px)
 and (device-width : 320px) 
 and (device-height : 480px)
 {
-    .desktop-menu-wrapper {
-        display: none;
+    main {
+        width: 320px;
+        height: 450px;
     }
-    .main-section {
-        width: 414px;
-        margin-top: 20px;
+    main section {
+        width: 100%;
+    }
+    footer {
+        height: 32px;
     }
     .main-section .title {
-        font-size: 70px;
+        font-size: 40px;
     }
     .main-section img.avatar {
-        width: 370px;
+        width: 280px;
     }
     .main-section .introduction p {
-        font-size: 24px;
+        font-size: 20px;
     }
 }
 /* ----------- Animations ----------- */
