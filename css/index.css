@@ -6,9 +6,10 @@
 --sandy-brown: #ff9b54ff;
 */
 /* Start of main css */
-* {
+html {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 body {
     background-color: black;
@@ -18,34 +19,47 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-origin: border-box;
-    height: 100vh;
+    height: 100%;
 }
 
 /* ----------- Desktop ----------- */
 /* Main wrappers */
 header {
-    height: 10%;
-    width: 1000px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
+    height: 80px;
 }
 main {
-    height: 80%;
-    width: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    top: 80px;
+    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     padding: 0;
 }
 footer {
-    height: 10%;
-    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30px;
 }
 /* Desktop menu */
-.desktop-menu-wrapper {
-    margin-top: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 24px;
+header .desktop-menu-wrapper {
+    width: 1000px;
+    margin-top: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 24px;
     background: rgba(204, 204, 204, 0.15);
     animation-name: appear;
@@ -54,10 +68,10 @@ footer {
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
 }
-.desktop-menu-wrapper div li {
+header .desktop-menu-wrapper div li {
     list-style-type: none;
 }
-.desktop-menu-wrapper div li a{
+header .desktop-menu-wrapper div li a{
     font-family: 'Cinzel', serif;
     font-size: 30px;
     text-align: center;
@@ -66,15 +80,17 @@ footer {
 }
 main section {
     height: 100%;
-    width: 1000px;
+    width: 100%;
     overflow-y: scroll;
     margin-left: auto;
     margin-right: auto;
     scroll-snap-align: start;
 }
+.main-section {
+    padding-top: 80px;
+    width: 1000px;
+}
 .main-section .title {
-    margin-left: auto;
-    margin-right: auto;
     font-size: 80px;
     color: #720026;
     text-align: center;
@@ -89,6 +105,7 @@ main section {
     width: 400px;
     border-radius: 50%;
     display: block;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     border-style: none;
@@ -128,6 +145,10 @@ main section {
     scroll-snap-align: start;
     opacity: 70%;
     background-color: #720026ff;
+}
+footer p {
+    text-align: center;
+    color: white;
 }
 /* ----------- 1366x768 ----------- */
 @media only screen
