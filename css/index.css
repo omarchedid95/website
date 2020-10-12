@@ -157,13 +157,64 @@ main section {
     background: rgb(197, 97, 131);
     background: rgba(197, 97, 131, 0.7);
 }
+.help-wrapper {
+    animation-name: enterRight;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
 .help-section h2 {
     color: #d9ecf2;
-}
-.help-section .help-banner {
     margin-left: auto;
     margin-right: auto;
     width: 700px;
+}
+.help-section .help-type::before {
+    content: 'design';
+    color: #003049;
+    animation-name: changeHelp;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-size: 85px;
+    font-weight: bold;
+}
+@keyframes changeHelp {
+    0%   {
+        content: 'design';
+    }
+    10% {
+        content: 'develop';
+    }
+    20%  {
+        content: 'build';
+    }
+    30% {
+        content: 'test';
+    }
+    40%  {
+        content: 'containerize';
+    }
+    50% {
+        content: 'secure';
+    }
+    60%  {
+        content: 'deploy';
+    }
+    70% {
+        content: 'scale';
+    }
+    80%  {
+        content: 'maintain';
+    }
+    90% {
+        content: 'debug';
+    }
+    100% {
+
+    }
 }
 .services-section {
     background: rgb(121, 76, 116);
@@ -242,7 +293,7 @@ and (-webkit-device-pixel-ratio : 3)
     .main-section .introduction p {
         font-size: 24px;
     }
-    .help-section .help-banner {
+    .help-section h2 {
         width: 375px;
     }
     .services-section {
@@ -292,7 +343,7 @@ and (device-height : 736px)
     .main-section .introduction p {
         font-size: 24px;
     }
-    .help-section .help-banner {
+    .help-section h2 {
         width: 414px;
     }
     .services-section {
@@ -342,7 +393,7 @@ and (max-device-height : 667px)
     .main-section .introduction p {
         font-size: 20px;
     }
-    .help-section .help-banner {
+    .help-section h2 {
         width: 375px;
     }
     .services-section {
@@ -393,7 +444,7 @@ and (device-height : 568px)
     .main-section .introduction p {
         font-size: 18px;
     }
-    .help-section .help-banner {
+    .help-section h2 {
         width: 310px;
         overflow-y: scroll;
     }
@@ -444,7 +495,7 @@ and (device-height : 480px)
     .main-section .introduction p {
         font-size: 20px;
     }
-    .help-section .help-banner {
+    .help-section h2 {
         width: 320px;
         overflow-y: scroll;
     }
