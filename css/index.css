@@ -21,6 +21,19 @@ body {
     background-origin: border-box;
     height: 100%;
 }
+h2, h3 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+h2 {
+    font-size: 60px;
+}
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 24px;
+}
 
 /* ----------- Desktop ----------- */
 /* Main wrappers */
@@ -87,7 +100,6 @@ main section {
     scroll-snap-align: start;
 }
 .main-section {
-    padding-top: 80px;
     width: 1000px;
 }
 .main-section .title {
@@ -141,10 +153,53 @@ main section {
     background: rgba(204, 204, 204, 0.9);
     border-radius: 24px;
 }
+.help-section {
+    background: rgb(197, 97, 131);
+    background: rgba(197, 97, 131, 0.7);
+}
+.help-section h2 {
+    color: #d9ecf2;
+}
+.help-section .help-banner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
 .services-section {
-    scroll-snap-align: start;
-    opacity: 70%;
-    background-color: #720026ff;
+    background: rgb(121, 76, 116);
+    background: rgba(121, 76, 116, 0.7);
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.services-section h2{
+    color: #fadcaa
+}
+.services-section .services-container {
+    padding-top: 100px;
+}
+.services-section .service-container {
+    width: 400px; 
+    height: 500px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #b2deec;
+    border-radius: 24px;
+    overflow-y: scroll;
+
+}
+.services-section .service-container h3 {
+    padding-top: 24px;
+}
+.services-section .service-container img {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+.services-section .service-container h4 {
+    padding-top: 40px;
 }
 footer p {
     text-align: center;
@@ -164,17 +219,18 @@ and (device-height : 812px)
 and (-webkit-device-pixel-ratio : 3)
 {
     main {
-        top: 0;
+        top: 0px;
         width: 375px;
         height: 780px;
     }
     main section {
         padding-left: 4px;
         padding-right: 4px;
+        overflow-x: hidden;
+        width: 375px !important;
     }
     .main-section {
-        width: 375px;
-        padding-top: 0;
+        padding-top: 0px;
     }
     .main-section .title {
         font-size: 65px;
@@ -185,6 +241,26 @@ and (-webkit-device-pixel-ratio : 3)
     }
     .main-section .introduction p {
         font-size: 24px;
+    }
+    .help-section .help-banner {
+        width: 375px;
+    }
+    .services-section {
+        padding: 0px;
+    }
+    .services-section .services-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .services-section .service-container {
+        width: 360px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    .services-section .service-container h4 {
+        padding-top: 24px;
     }
 }
 /* ----------- iPhone 6,7,8 Plus----------- */
@@ -215,7 +291,6 @@ and (device-height : 736px)
     .main-section .introduction p {
         font-size: 24px;
     }
-
 }
 /* ----------- iPhone 6,7,8 ----------- */
 @media only screen 
