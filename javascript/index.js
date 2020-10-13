@@ -1,7 +1,26 @@
 $(document).ready(() => {
-    var width = $(window).width();
-    var height = $(window).height();
-    console.log(width, height)
+    const width = $(window).width();
+    const height = $(window).height();
+    // Get the objects that we are interested in
+    let sections = $('section').toArray();
+    let main = $('main')[0];
+    // Create an observer for our section to figure out which on is active
+    const options = {
+        root: main,
+        threshold: 0.7
+    }
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove('inactive-section');
+                entry.target.classList.add('active-section');
+            } else {
+                entry.target.classList.remove('active-section');
+                entry.target.classList.add('inactive-section');
+            }
+        })
+    }, options);
+    sections.forEach(section => observer.observe(section));
 
     function isMobile(width, height) {
         if (width == 375 && height == 812 ||

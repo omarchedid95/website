@@ -99,19 +99,31 @@ main section {
     margin-right: auto;
     scroll-snap-align: start;
 }
+.inactive-section * {
+    transition-duration: 1s;
+    transition-property: opacity;
+    opacity: 0;
+}
+.active-section * {
+    transition-duration: 0.8s;
+    transition-property: opacity;
+    opacity: 1;
+}
 .main-section {
     width: 1000px;
+}
+.main-section.active-section .title {
+    animation-name: enterLeft;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
 }
 .main-section .title {
     font-size: 80px;
     color: #720026;
     text-align: center;
     font-family: 'Cinzel', serif;
-    animation-name: enterLeft;
-    animation-duration: 1.2s;
-    animation-delay: 0s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
 }
 .main-section img.avatar {
     width: 400px;
@@ -123,13 +135,15 @@ main section {
     border-style: none;
     box-shadow: 0px 0px 10px 12px rgba(0,0,0);
     box-shadow: 0px 0px 10px 12px rgba(0,0,0,0.2);
+}
+.main-section.active-section img.avatar {
     animation-name: float;
     animation-duration: 5s;
     animation-delay: 0s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
-.main-section .avatar-wrapper {
+.main-section.active-section .avatar-wrapper {
     animation-name: appear;
     animation-duration: 2.3s;
     animation-delay: 0s;
@@ -137,12 +151,14 @@ main section {
     animation-iteration-count: 1;
 }
 .main-section .introduction {
+    margin-top: 16px;
+}
+.main-section.active-section .introduction {
     animation-name: enterRight;
     animation-duration: 1.2s;
     animation-delay: 0s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
-    margin-top: 16px;
 }
 .main-section .introduction p {
     font-family: 'Mukta', sans-serif;
@@ -157,7 +173,7 @@ main section {
     background: rgb(197, 97, 131);
     background: rgba(197, 97, 131, 0.7);
 }
-.help-wrapper {
+.helper-section.active-section .help-wrapper {
     animation-name: enterRight;
     animation-duration: 1.2s;
     animation-delay: 0s;
@@ -239,6 +255,8 @@ main section {
     background-color: #b2deec;
     border-radius: 24px;
     overflow-y: scroll;
+}
+.services-section.active-section .service-container {
     transition-duration: 0.6s;
     transition-property: box-shadow, transform;
     transform: translateY(0px);
