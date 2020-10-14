@@ -4,7 +4,7 @@ $(document).ready(() => {
     // Get the objects that we are interested in
     let sections = $('section').toArray();
     let main = $('main')[0];
-    // Create an observer for our section to figure out which on is active
+    // Create an observer for our sections to figure out which on is active
     const options = {
         root: main,
         threshold: 0.7

@@ -20,9 +20,9 @@ body {
     background-attachment: fixed;
     background-origin: border-box;
     height: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 h2, h3 {
-    font-family: 'Raleway', sans-serif;
     text-align: center;
 }
 h2 {
@@ -85,7 +85,6 @@ header .desktop-menu-wrapper div li {
     list-style-type: none;
 }
 header .desktop-menu-wrapper div li a{
-    font-family: 'Cinzel', serif;
     font-size: 30px;
     text-align: center;
     text-decoration: none;
@@ -123,7 +122,6 @@ main section {
     font-size: 80px;
     color: #720026;
     text-align: center;
-    font-family: 'Cinzel', serif;
 }
 .main-section img.avatar {
     width: 400px;
@@ -161,7 +159,6 @@ main section {
     animation-iteration-count: 1;
 }
 .main-section .introduction p {
-    font-family: 'Mukta', sans-serif;
     font-size: 30px;
     color: #4f000bff;
     padding: 8px;
@@ -245,16 +242,16 @@ main section {
 .services-section .services-container {
     padding-top: 100px;
 }
-.services-section .service-container {
-    width: 400px; 
+.services-section .services-container .service-container {
     height: 500px;
     margin-left: 80px;
     margin-right: 80px;
+    padding-top: 24px;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: #b2deec;
     border-radius: 24px;
     overflow-y: scroll;
+    background-color: #b2deec;
 }
 .services-section.active-section .service-container {
     transition-duration: 0.6s;
@@ -266,9 +263,6 @@ main section {
     box-shadow: 5px 5px 50px black;
     transform: translateY(-20px);
 }
-.services-section .service-container h3 {
-    padding-top: 24px;
-}
 .services-section .service-container img {
     width: 150px;
     display: block;
@@ -277,9 +271,55 @@ main section {
 .services-section .service-container h4 {
     padding-top: 40px;
 }
+.technologies-section {
+    background: rgb(6, 214, 160);
+    background: rgb(6, 214, 160, 0.7);
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.technologies-section h2 {
+    color: #0f4c5c
+}
+.technologies-section .technologies-container {
+    padding-top: 100px;
+}
+.technologies-section .technologies-container .technology-container {
+    height: 400px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 24px;
+    overflow-y: scroll;
+    background: #577590;
+    color: white;
+}
+.technologies-section.active-section .technology-container {
+    transition-duration: 0.6s;
+    transition-property: box-shadow, transform;
+    transform: translateY(0px);
+    box-shadow: none;
+}
+.technologies-section .technology-container:hover {
+    box-shadow: 5px 5px 50px black;
+    transform: translateY(-20px);
+}
+.technologies-section .technologies-container .technology-container img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.technologies-section .technologies-container .technology-container h4{
+    padding-top: 40px;
+}
 footer p {
     text-align: center;
-    color: white;
+    color: #003049;
 }
 /* ----------- 1366x768 ----------- */
 @media only screen
@@ -329,13 +369,33 @@ and (-webkit-device-pixel-ratio : 3)
         padding-left: 24px;
         padding-right: 24px;
     }
-    .services-section .service-container {
+    .services-section .services-container .service-container {
         width: 360px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
     }
-    .services-section .service-container h4 {
+    .services-section .services-container .service-container h4 {
+        padding-top: 24px;
+    }
+    .technologies-section {
+        padding: 0px;
+    }
+    .technologies-section h2 {
+        font-size: 50px;
+    }
+    .technologies-section .technologies-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .technologies-section .technologies-container .technology-container {
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .technologies-section .technologies-container .technology-container h4 {
         padding-top: 24px;
     }
 }
@@ -379,13 +439,33 @@ and (device-height : 736px)
         padding-left: 24px;
         padding-right: 24px;
     }
-    .services-section .service-container {
+    .services-section .services-container .service-container {
         width: 380px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
     }
-    .services-section .service-container h4 {
+    .services-section .services-container .service-container h4 {
+        padding-top: 24px;
+    }
+    .technologies-section {
+        padding: 0px;
+    }
+    .technologies-section h2 {
+        font-size: 50px;
+    }
+    .technologies-section .technologies-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .technologies-section .technologies-container .technology-container {
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .technologies-section .technologies-container .technology-container h4 {
         padding-top: 24px;
     }
 }
@@ -429,13 +509,33 @@ and (max-device-height : 667px)
         padding-left: 24px;
         padding-right: 24px;
     }
-    .services-section .service-container {
-        width: 360px;
+    .services-section .services-container .service-container {
+        width: 340px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
     }
-    .services-section .service-container h4 {
+    .services-section .services-container .service-container h4 {
+        padding-top: 24px;
+    }
+    .technologies-section {
+        padding: 0px;
+    }
+    .technologies-section h2 {
+        font-size: 50px;
+    }
+    .technologies-section .technologies-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .technologies-section .technologies-container .technology-container {
+        width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .technologies-section .technologies-container .technology-container h4 {
         padding-top: 24px;
     }
 
@@ -481,13 +581,36 @@ and (device-height : 568px)
         padding-left: 24px;
         padding-right: 24px;
     }
-    .services-section .service-container {
-        width: 320px;
+    .services-section .services-container .service-container {
+        width: 280px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
     }
-    .services-section .service-container h4 {
+    .services-section .services-container .service-container h4 {
+        padding-top: 24px;
+    }
+    .technologies-section {
+        padding: 0px;
+    }
+    .technologies-section h2 {
+        font-size: 50px;
+    }
+    .technologies-section h3 {
+        overflow-x: scroll;
+    }
+    .technologies-section .technologies-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .technologies-section .technologies-container .technology-container {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .technologies-section .technologies-container .technology-container h4 {
         padding-top: 24px;
     }
 }
@@ -532,13 +655,33 @@ and (device-height : 480px)
         padding-left: 24px;
         padding-right: 24px;
     }
-    .services-section .service-container {
-        width: 320px;
+    .services-section .services-container .service-container {
+        width: 280px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
     }
-    .services-section .service-container h4 {
+    .services-section .services-container .service-container h4 {
+        padding-top: 24px;
+    }
+    .technologies-section {
+        padding: 0px;
+    }
+    .technologies-section h2 {
+        font-size: 50px;
+    }
+    .technologies-section .technologies-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .technologies-section .technologies-container .technology-container {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .technologies-section .technologies-container .technology-container h4 {
         padding-top: 24px;
     }
 }
