@@ -6,14 +6,20 @@
 --sandy-brown: #ff9b54ff;
 */
 /* Start of main css */
+* {
+    margin: 0px;
+    padding: 0px;
+}
 html {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     height: 100%;
 }
 body {
+    margin: 0;
+    padding: 0;
     background-color: black;
-    background-image: url('../assets/san-francisco.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/san-francisco.jpg');
     background-position: 0 center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,6 +27,7 @@ body {
     background-origin: border-box;
     height: 100%;
     font-family: 'Raleway', sans-serif;
+    color: white;
 }
 h2, h3 {
     text-align: center;
@@ -40,8 +47,8 @@ h4 {
 header {
     position: absolute;
     z-index: 1;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
     margin-left: auto;
     margin-right: auto;
     height: 80px;
@@ -49,8 +56,8 @@ header {
 main {
     position: absolute;
     z-index: 0;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
     top: 80px;
     bottom: 30px;
     margin-left: auto;
@@ -74,7 +81,6 @@ header .desktop-menu-wrapper {
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 24px;
-    background: rgba(204, 204, 204, 0.15);
     animation-name: appear;
     animation-duration: 2.3s;
     animation-delay: 0s;
@@ -88,7 +94,7 @@ header .desktop-menu-wrapper div li a{
     font-size: 30px;
     text-align: center;
     text-decoration: none;
-    color: #720026ff;
+    color: white;
 }
 main section {
     height: 100%;
@@ -104,7 +110,7 @@ main section {
     opacity: 0;
 }
 .active-section * {
-    transition-duration: 0.8s;
+    transition-duration: 1.2s;
     transition-property: opacity;
     opacity: 1;
 }
@@ -113,14 +119,13 @@ main section {
 }
 .main-section.active-section .title {
     animation-name: enterLeft;
-    animation-duration: 1.2s;
+    animation-duration: 0.8s;
     animation-delay: 0s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
 }
 .main-section .title {
     font-size: 80px;
-    color: #720026;
     text-align: center;
 }
 .main-section img.avatar {
@@ -143,7 +148,7 @@ main section {
 }
 .main-section.active-section .avatar-wrapper {
     animation-name: appear;
-    animation-duration: 2.3s;
+    animation-duration: 0.8s;
     animation-delay: 0s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
@@ -153,39 +158,33 @@ main section {
 }
 .main-section.active-section .introduction {
     animation-name: enterRight;
-    animation-duration: 1.2s;
+    animation-duration: 0.8s;
     animation-delay: 0s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
 }
 .main-section .introduction p {
     font-size: 30px;
-    color: #4f000bff;
+    margin-left: auto;
+    margin-right: auto;
     padding: 8px;
-    background: rgb(204, 204, 204); /* Fallback */
-    background: rgba(204, 204, 204, 0.9);
     border-radius: 24px;
 }
-.help-section {
-    background: rgb(197, 97, 131);
-    background: rgba(197, 97, 131, 0.7);
-}
-.helper-section.active-section .help-wrapper {
+.help-section.active-section .help-wrapper {
     animation-name: enterRight;
-    animation-duration: 1.2s;
+    animation-duration: 0.8s;
     animation-delay: 0s;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
 }
 .help-section h2 {
-    color: #d9ecf2;
     margin-left: auto;
     margin-right: auto;
     width: 700px;
 }
 .help-section .help-type::before {
     content: 'design';
-    color: #003049;
+    color: #e63946;
     animation-name: changeHelp;
     animation-duration: 10s;
     animation-delay: 0s;
@@ -230,14 +229,16 @@ main section {
     }
 }
 .services-section {
-    background: rgb(121, 76, 116);
-    background: rgba(121, 76, 116, 0.7);
     padding-top: 40px;
     padding-left: 200px;
     padding-right: 200px;
 }
-.services-section h2{
-    color: #fadcaa
+.services-section.active-section .services-wrapper {
+    animation-name: enterLeft;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
 }
 .services-section .services-container {
     padding-top: 100px;
@@ -252,6 +253,7 @@ main section {
     border-radius: 24px;
     overflow-y: scroll;
     background-color: #b2deec;
+    color: #003049;
 }
 .services-section.active-section .service-container {
     transition-duration: 0.6s;
@@ -272,14 +274,16 @@ main section {
     padding-top: 40px;
 }
 .technologies-section {
-    background: rgb(6, 214, 160);
-    background: rgb(6, 214, 160, 0.7);
     padding-top: 40px;
     padding-left: 200px;
     padding-right: 200px;
 }
-.technologies-section h2 {
-    color: #0f4c5c
+.technologies-section.active-section .technologies-wrapper {
+    animation-name: enterBottom;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
 }
 .technologies-section .technologies-container {
     padding-top: 100px;
@@ -294,8 +298,8 @@ main section {
     padding-right: 40px;
     border-radius: 24px;
     overflow-y: scroll;
-    background: #577590;
-    color: white;
+    background-color: #b2deec;
+    color: #003049;
 }
 .technologies-section.active-section .technology-container {
     transition-duration: 0.6s;
@@ -313,13 +317,43 @@ main section {
     display: block;
     margin: auto;
 }
-
 .technologies-section .technologies-container .technology-container h4{
     padding-top: 40px;
 }
+.information-section.active-section .information-wrapper{
+    animation-name: enterRight;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.information-section h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.information-section h2 a{
+    text-decoration: none;
+    color: #e63946;
+}
+.reach-section.active-section .reach-wrapper{
+    animation-name: enterLeft;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.reach-section h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.reach-section h2 a{
+    text-decoration: none;
+    color: #e63946;
+}
 footer p {
     text-align: center;
-    color: #003049;
 }
 /* ----------- 1366x768 ----------- */
 @media only screen
@@ -356,13 +390,21 @@ and (-webkit-device-pixel-ratio : 3)
         width: 350px;
     }
     .main-section .introduction p {
+        width: 360px;
         font-size: 24px;
     }
     .help-section h2 {
         width: 375px;
     }
+    .help-section h2:nth-of-type(2)::before {
+        font-size: 60px;
+    }
     .services-section {
         padding: 0px;
+    }
+    .services-section h2 {
+        padding-top: 20px;
+        font-size: 50px;
     }
     .services-section .services-container {
         padding-top: 16px;
@@ -370,19 +412,21 @@ and (-webkit-device-pixel-ratio : 3)
         padding-right: 24px;
     }
     .services-section .services-container .service-container {
-        width: 360px;
+        width: 330px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
     }
     .services-section .services-container .service-container h4 {
+        font-size: 22px;
         padding-top: 24px;
     }
     .technologies-section {
         padding: 0px;
     }
     .technologies-section h2 {
-        font-size: 50px;
+        padding-top: 20px;
+        font-size: 40px;
     }
     .technologies-section .technologies-container {
         padding-top: 16px;
@@ -390,13 +434,30 @@ and (-webkit-device-pixel-ratio : 3)
         padding-right: 24px;
     }
     .technologies-section .technologies-container .technology-container {
-        width: 360px;
+        width: 330px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
     }
     .technologies-section .technologies-container .technology-container h4 {
+        font-size: 22px;
         padding-top: 24px;
+    }
+    .information-section {
+        padding: 0px;
+    }
+    .information-section h2 {
+        width: 330px;
+        overflow-y: scroll;
+        font-size: 40px;
+    }
+    .reach-section {
+        padding: 0px;
+    }
+    .reach-section h2 {
+        width: 330px;
+        overflow-y: scroll;
+        font-size: 40px;
     }
 }
 /* ----------- iPhone 6,7,8 Plus----------- */
@@ -426,13 +487,21 @@ and (device-height : 736px)
         width: 300px;
     }
     .main-section .introduction p {
+        width: 380px;
         font-size: 24px;
     }
     .help-section h2 {
         width: 414px;
     }
+    .help-section h2:nth-of-type(2)::before {
+        font-size: 70px;
+    }
     .services-section {
         padding: 0px;
+    }
+    .services-section h2 {
+        padding-top: 20px;
+        font-size: 50px;
     }
     .services-section .services-container {
         padding-top: 16px;
@@ -440,7 +509,7 @@ and (device-height : 736px)
         padding-right: 24px;
     }
     .services-section .services-container .service-container {
-        width: 380px;
+        width: 370px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
@@ -452,7 +521,8 @@ and (device-height : 736px)
         padding: 0px;
     }
     .technologies-section h2 {
-        font-size: 50px;
+        padding-top: 20px;
+        font-size: 40px;
     }
     .technologies-section .technologies-container {
         padding-top: 16px;
@@ -467,6 +537,22 @@ and (device-height : 736px)
     }
     .technologies-section .technologies-container .technology-container h4 {
         padding-top: 24px;
+    }
+    .information-section {
+        padding: 0px;
+    }
+    .information-section h2 {
+        width: 380px;
+        overflow-y: scroll;
+        font-size: 50px;
+    }
+    .reach-section {
+        padding: 0px;
+    }
+    .reach-section h2 {
+        width: 380px;
+        overflow-y: scroll;
+        font-size: 50px;
     }
 }
 /* ----------- iPhone 6,7,8 ----------- */
@@ -496,13 +582,21 @@ and (max-device-height : 667px)
         width: 300px;
     }
     .main-section .introduction p {
+        width: 340px;
         font-size: 20px;
     }
     .help-section h2 {
         width: 375px;
     }
+    .help-section h2:nth-of-type(2)::before {
+        font-size: 60px;
+    }
     .services-section {
         padding: 0px;
+    }
+    .services-section h2 {
+        padding-top: 20px;
+        font-size: 40px;
     }
     .services-section .services-container {
         padding-top: 16px;
@@ -516,13 +610,15 @@ and (max-device-height : 667px)
         margin-bottom: 40px;
     }
     .services-section .services-container .service-container h4 {
+        font-size: 22px;
         padding-top: 24px;
     }
     .technologies-section {
         padding: 0px;
     }
     .technologies-section h2 {
-        font-size: 50px;
+        padding-top: 20px;
+        font-size: 40px;
     }
     .technologies-section .technologies-container {
         padding-top: 16px;
@@ -536,9 +632,25 @@ and (max-device-height : 667px)
         margin-bottom: 40px;
     }
     .technologies-section .technologies-container .technology-container h4 {
+        font-size: 22px;
         padding-top: 24px;
     }
-
+    .information-section {
+        padding: 0px;
+    }
+    .information-section h2 {
+        width: 360px;
+        overflow-y: scroll;
+        font-size: 40px;
+    }
+    .reach-section {
+        padding: 0px;
+    }
+    .reach-section h2 {
+        width: 360px;
+        overflow-y: scroll;
+        font-size: 40px;
+    }
 }
 /* ----------- iPhone 5,5s ----------- */
 @media only screen 
@@ -567,14 +679,21 @@ and (device-height : 568px)
         width: 280px;
     }
     .main-section .introduction p {
+        width: 300px;
         font-size: 18px;
     }
     .help-section h2 {
         width: 310px;
-        overflow-y: scroll;
+    }
+    .help-section h2:nth-of-type(2)::before {
+        font-size: 50px;
     }
     .services-section {
         padding: 0px;
+    }
+    .services-section h2 {
+        padding-top: 20px;
+        font-size: 40px;
     }
     .services-section .services-container {
         padding-top: 16px;
@@ -588,16 +707,15 @@ and (device-height : 568px)
         margin-bottom: 40px;
     }
     .services-section .services-container .service-container h4 {
+        font-size: 22px;
         padding-top: 24px;
     }
     .technologies-section {
         padding: 0px;
     }
     .technologies-section h2 {
-        font-size: 50px;
-    }
-    .technologies-section h3 {
-        overflow-x: scroll;
+        padding-top: 20px;
+        font-size: 30px;
     }
     .technologies-section .technologies-container {
         padding-top: 16px;
@@ -611,7 +729,24 @@ and (device-height : 568px)
         margin-bottom: 40px;
     }
     .technologies-section .technologies-container .technology-container h4 {
+        font-size: 18px;
         padding-top: 24px;
+    }
+    .information-section {
+        padding: 0px;
+    }
+    .information-section h2 {
+        width: 280px;
+        overflow-y: scroll;
+        font-size: 40px;
+    }
+    .reach-section {
+        padding: 0px;
+    }
+    .reach-section h2 {
+        width: 280px;
+        overflow-y: scroll;
+        font-size: 40px;
     }
 }
 /* ----------- iPhone 4,4s ----------- */
@@ -631,7 +766,7 @@ and (device-height : 480px)
         width: 320px !important;
     }
     .main-section {
-        padding-top: 0;
+        padding-top: 20px;
     }
     .main-section .title {
         font-size: 40px;
@@ -641,14 +776,22 @@ and (device-height : 480px)
         width: 250px;
     }
     .main-section .introduction p {
+        width: 300px;
         font-size: 20px;
     }
     .help-section h2 {
+        font-size: 40px;
         width: 320px;
-        overflow-y: scroll;
+    }
+    .help-section h2:nth-of-type(2)::before {
+        font-size: 50px;
     }
     .services-section {
         padding: 0px;
+    }
+    .services-section h2 {
+        padding-top: 20px;
+        font-size: 40px;
     }
     .services-section .services-container {
         padding-top: 16px;
@@ -662,13 +805,15 @@ and (device-height : 480px)
         margin-bottom: 40px;
     }
     .services-section .services-container .service-container h4 {
+        font-size: 18px;
         padding-top: 24px;
     }
     .technologies-section {
         padding: 0px;
     }
     .technologies-section h2 {
-        font-size: 50px;
+        padding-top: 20px;
+        font-size: 40px;
     }
     .technologies-section .technologies-container {
         padding-top: 16px;
@@ -682,7 +827,24 @@ and (device-height : 480px)
         margin-bottom: 40px;
     }
     .technologies-section .technologies-container .technology-container h4 {
+        font-size: 18px;
         padding-top: 24px;
+    }
+    .information-section {
+        padding: 0px;
+    }
+    .information-section h2 {
+        width: 300px;
+        overflow-y: scroll;
+        font-size: 40px;
+    }
+    .reach-section {
+        padding: 0px;
+    }
+    .reach-section h2 {
+        width: 300px;
+        overflow-y: scroll;
+        font-size: 40px;
     }
 }
 /* ----------- Animations ----------- */
@@ -709,7 +871,7 @@ and (device-height : 480px)
 /* Enter the main section */
 @keyframes enterLeft {
     0% {
-        transform: translateX(-5000px);
+        transform: translateX(-2000px);
     }
     100% {
         transform: translateX(0px);
@@ -717,9 +879,17 @@ and (device-height : 480px)
 }
 @keyframes enterRight {
     0% {
-        transform: translateX(5000px);
+        transform: translateX(2000px);
     }
     100% {
         transform: translateX(0px);
+    }
+}
+@keyframes enterBottom {
+    0% {
+        transform: translateY(2000px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }

@@ -12,6 +12,7 @@
         <link rel='stylesheet' href='css/index.css'>
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Custom JavaScript -->
         <script type='text/javascript' src='javascript/index.js'></script>
     </head>
     <body>
@@ -19,10 +20,10 @@
           <!-- This menu is render for desktops -->
           <div class='container-fluid desktop-menu-wrapper'>
               <div class='row'>
-                  <li class='col'><a href='#home'>home</a></li>
-                  <li class='col'><a href='#about-me'>about me</a></li>
-                  <li class='col'><a href='#posts'>posts</a></li>
-                  <li class='col'><a href='#contact-me'>contact</a></li>
+                  <li class='col'><a href='/home.html'>home</a></li>
+                  <li class='col'><a href='/about.html'>about me</a></li>
+                  <li class='col'><a href='/posts.html'>posts</a></li>
+                  <li class='col'><a href='/contact.html'>contact</a></li>
               </div>
           </div>
         </header>
@@ -55,7 +56,7 @@
           </section>
           <section class='services-section'>
             <div class='row h-100'>
-              <div class='col align-self-center'>
+              <div class='col align-self-center services-wrapper'>
                 <h2>Here's what I can help you with</h2>
                 <div class='row services-container'>
                   <div class='col-sm align-self-center service-container'>
@@ -102,7 +103,7 @@
           </section>
           <section class='technologies-section'>
             <div class='row h-100'>
-              <div class='col align-self-center'>
+              <div class='col align-self-center technologies-wrapper'>
                 <h2>These are some of the amazing technologies that I work with regularly</h2>
                 <div class='row h-100 technologies-container'>
                   <div class='col-sm align-self-center technology-container'>
@@ -140,8 +141,17 @@
               </div>
             </div>
           </section>
-          <section class='services-section'>
-            <h2>What Can I do For You 4?</h2>
+          <section class='information-section'>
+            <div class='row h-100'>
+              <div class='col align-self-center information-wrapper'>
+                  <h2>You can find out more about my work experience <a href='/about.html'>here</a> and find my tech articles <a href='/posts.html'>here</a></h2>
+              </div>
+          </section>
+          <section class='reach-section'>
+            <div class='row h-100'>
+              <div class='col align-self-center reach-wrapper'>
+                  <h2>Feel free to <a href='/contact.html'>contact me</a> for consulting, development, and design work. I'd love to help in any way I can!</h2>
+              </div>
           </section>
         </main>
         <footer>
