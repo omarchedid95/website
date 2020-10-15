@@ -170,6 +170,9 @@ main section {
     padding: 8px;
     border-radius: 24px;
 }
+.main-section .introduction span {
+    color: #e63946;
+}
 .help-section.active-section .help-wrapper {
     animation-name: enterRight;
     animation-duration: 0.8s;
@@ -245,6 +248,8 @@ main section {
 }
 .services-section .services-container .service-container {
     height: 500px;
+    min-width: 350px;
+    margin-bottom: 80px;
     margin-left: 80px;
     margin-right: 80px;
     padding-top: 24px;
@@ -290,6 +295,7 @@ main section {
 }
 .technologies-section .technologies-container .technology-container {
     height: 400px;
+    min-width: 350px;
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom: 80px;
@@ -354,13 +360,6 @@ main section {
 }
 footer p {
     text-align: center;
-}
-/* ----------- 1366x768 ----------- */
-@media only screen
-and (device-width : 1366px) 
-and (device-height : 768px)
-{
-
 }
 /* ----------- iPhone X ----------- */
 @media only screen 
