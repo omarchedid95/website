@@ -1,0 +1,43 @@
+@keyframes float {
+	0% {
+        transform: translatey(0px);
+	}
+	50% {
+        transform: translatey(-15px);
+	}
+	100% {
+        transform: translatey(0px);
+	}
+}
+@keyframes appear {
+    0% {
+        opacity: 0%;
+	}
+	100% {
+        opacity: 100%;
+	}
+}
+@keyframes enterLeft {
+    0% {
+        transform: translateX(-2000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes enterRight {
+    0% {
+        transform: translateX(2000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes enterBottom {
+    0% {
+        transform: translateY(2000px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
