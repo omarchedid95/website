@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Upload repository to bucket
+        uses: ochanje210/simple-s3-upload-action@v1.0.0
+        with:
+          AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+          AWS_SECRET_KEY_ID: $AWS_SECRET_KEY_ID
+          AWS_S3_BUCKET: $AWS_S3_BUCKET
+          SOURCE_DIR: ./
+          DST_DIR: /
