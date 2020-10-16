@@ -13,10 +13,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Upload repository to bucket
-        uses: ochanje210/simple-s3-upload-action@v1.0.0
+        uses: shallwefootball/s3-upload-action@master
         with:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY_ID }}
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-          SOURCE_DIR: .
-          DEST_DIR: /
+          aws_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_KEY_ID }}
+          aws_bucket: ${{ secrets.AWS_S3_BUCKET }}
+          source_dir: ./
