@@ -242,26 +242,12 @@
     text-decoration: none;
     color: #e63946;
 }
-footer p {
-    text-align: center;
-}
 /* ----------- iPhone X ----------- */
 @media only screen 
 and (device-width : 375px) 
 and (device-height : 812px)
 and (-webkit-device-pixel-ratio : 3)
 {
-    main {
-        top: 0px;
-        width: 375px;
-        height: 780px;
-    }
-    main section {
-        padding-left: 4px;
-        padding-right: 4px;
-        overflow-x: hidden;
-        width: 375px !important;
-    }
     .main-section {
         padding-top: 0px;
     }
@@ -343,22 +329,11 @@ and (-webkit-device-pixel-ratio : 3)
         font-size: 40px;
     }
 }
-/* ----------- iPhone 6,7,8 Plus----------- */
+/* ----------- iPhone 6,7,8 Plus ----------- */
 @media only screen 
 and (device-width : 414px) 
 and (device-height : 736px)
 {
-    main {
-        top: 0;
-        width: 414px;
-        height: 700px;
-    }
-    main section {
-        padding-left: 4px;
-        padding-right: 4px;
-        overflow-x: hidden;
-        width: 414px !important;
-    }
     .main-section {
         padding-top: 0;
     }
@@ -443,17 +418,6 @@ and (device-height : 736px)
 and (min-device-width : 375px) 
 and (max-device-height : 667px)
 {
-    main {
-        top: 0;
-        width: 375px;
-        height: 640px;
-    }
-    main section {
-        padding-left: 4px;
-        padding-right: 4px;
-        overflow-x: hidden;
-        width: 375px !important;
-    }
     .main-section {
         padding-top: 0;
     }
@@ -540,17 +504,6 @@ and (max-device-height : 667px)
 and (device-width : 320px) 
 and (device-height : 568px)
 {
-    main {
-        top: 0;
-        width: 320px;
-        height: 530px;
-    }
-    main section {
-        padding-left: 4px;
-        padding-right: 4px;
-        overflow-x: hidden;
-        width: 320px !important;
-    }
     .main-section {
         padding-top: 0;
     }
@@ -637,17 +590,6 @@ and (device-height : 568px)
 and (device-width : 320px) 
 and (device-height : 480px)
 {
-    main {
-        top: 0;
-        width: 320px;
-        height: 450px;
-    }
-    main section {
-        padding-left: 4px;
-        padding-right: 4px;
-        overflow-x: hidden;
-        width: 320px !important;
-    }
     .main-section {
         padding-top: 20px;
     }

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous'>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <!-- Styles -->
+        <link rel='stylesheet' href='css/common.css'>
+        <link rel='stylesheet' href='css/animations.css'>
+        <link rel='stylesheet' href='css/menu.css'>
+        <link rel='stylesheet' href='css/about.css'>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Custom JavaScript -->
+        <script type='text/javascript' src='javascript/index.js'></script>
+    </head>
+    <body>
+        <header>
+          <!-- This menu is render for desktops -->
+          <div class='container-fluid desktop-menu-wrapper'>
+              <div class='row'>
+                  <li class='col'><a href='/index.html'>home</a></li>
+                  <li class='col'><a href='/about.html'>about me</a></li>
+                  <li class='col'><a href='/posts.html'>posts</a></li>
+                  <li class='col'><a href='/contact.html'>contact</a></li>
+              </div>
+          </div>
+        </header>
+        <main>
+            <section class='current-role-section'>
+                <div class='row h-100'>
+                    <div class='col align-self-center'>
+                        <h2>
+                            I define myself as a full stack web developer and designer who happens to know a thing or two about security.
+                            Currently, I'm working as a full time DevSecOps engineer at Cisco. Scroll down for a complete history of my work 
+                            experience and education, or grab my resume directly over <a href='/assets/Omar_Chedid_Resume_2020.pdf' target='_blank'>here</a>
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section class='work-section'>
+                <div class='row h-100'>
+                    <div class='col align-self-center work-wrapper'>
+                        <h1>Work Experience</h1>
+                        <div class='work-description'>
+                            <h2>Cisco (AppDynamics)</h2>
+                            <h2>DevSecOps Engineer</h2>
+                            <h3>San Francisco, California</h3>
+                            <h3>January 2020 - Present</h3>
+                            <ul>
+                                <li>
+                                    <h4>
+                                    Worked with the techops and security teams on scanning, patching, and securing cloud infrastructure on AWS. We currently use Terraform,
+                                    Ansible, Chef, and Jenkins through an Infrastructure as Code (IaC) approach to manage over 1,500 servers that span four global regions
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                    Took full ownership of developing an in-house vulnerability management system with Node JS (Express), React JS, and SQL to keep track of
+                                    infrastructure vulnerabilities and 30 day SLA patch requirements. This was a full stack project (backend, frontend, containerization, infrastructure provisioning, and deployment) 
+                                    that I delivered in under two months
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                    Used Terraform, Ansible, and Jenkins to spin up a scalable, reliable, and multi-region Splunk deployment on AWS. This project involved
+                                    creating a cluster of indexers, heavy forwarders, VPC peers, and a cluster master. The entire system is configured using Chef
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                    Worked extensively on reducing Splunk ingestion costs by automating AWS ELB access log ingestion from S3 into Splunk on demand. This was
+                                    done using Python, Jenkins, and the universal Splunk Forwarder.
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                    I’m an active member of the Cisco CATO (Cloud Authority To Operate) team which enforces SOC2 compliance requirements across the server
+                                    farm.
+                                    </h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='work-description'>
+                            <h2>Cisco (Security)</h2>
+                            <h2>Security Engineer</h2>
+                            <h3>San Jose, California</h3>
+                            <h3>December 2018 - January 2020</h3>
+                            <ul>
+                                <h4>
+                                    I worked with the security business group (SBG) as a software security engineer. I have been fortunate enough to contribute to 
+                                    three major security products including the Adaptive Security Appliance (ASA) firewall, the Fire Threat Defense (FTD) firewall, 
+                                    and the next generation Cloud Native Thread Defense (CNTD) firewall. In addition, I got to work with the Snort team for a while 
+                                    on a QoS feature as part of the IPS/IDS system.
+                                </h4>
+                                <h4 class='project-title'>Cloud Native Thread Defense (CNTD) - Lina X</h4>
+                                <h4>
+                                    My most recent work included developing features for the next generation cloud native threat defense (CNTD) firewall known as “Lina-X”. This high 
+                                    performance firewall was aimed at both hardware compute appliances and cloud environments. The control plane was written in GoLang, and 
+                                    the data plane made use of the vector packet processing (VPP) project written in C. I worked with a small team of 12 senior security 
+                                    engineers and architects and took full ownership of the following features:
+                                </h4>
+                                <li>
+                                    <h4>
+                                        Built automated test infrastructure for the firewall that supports test cases written in any programming language from scratch. 
+                                        I wrote this framework using Golang, Ansible, the Python PyRobot framework, and used Jenkins to automate the test execution
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        Added a log controller feature using Golang to control the logging levels of all the firewall components
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        Implemented high performance GRPC APIs using the protobuff messaging protocol for Golang. Also worked on securing these APIs by 
+                                        setting up secure TLS channels using our internal PKI for certificate management
+                                    </h4>
+                                </li>
+                                <h4 class='project-title'>Fire Thread Defense (FTD) and Snort</h4>
+                                <li>
+                                    <h4>
+                                        Worked with the fire threat defense (FTD) firewall team on implementing SSL/TLS session resumption in C++ for the Snort3 IDS
+                                    </h4>
+                                </li>
+                                <h4 class='project-title'>Adaptive Security Appliance (ASA)</h4>
+                                <li>
+                                    <h4>
+                                        Implemented firewall clustering and high availability for the ASA firewall in C
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        Implemented GPRS tunneling protocol (GTP) V1 and V2 for the ASA firewall
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        Added telemetry support for GTP location-logging, anti-replay, and anti-spoofing features
+                                    </h4>
+                                </li>
+                                <h4 class='project-title'>Side Project</h4>
+                                <li>
+                                    <h4>
+                                        Wrote a web app used to automate how the GTP protocol is upgraded and maintained on the Cisco ASA. The app was built using NodeJS 
+                                        for the back end and ReactJS for the front end. The tool eliminates the chances of introducing security bugs into the source code 
+                                        and speeds up the entire protocol upgrade process by generating the source code for the developer.
+                                    </h4>
+                                </li>
+                                <h4 class='project-title'>Data Center</h4>
+                                <li>
+                                    <h4>
+                                        Did some hands on physical networking in the Cisco datacenter to bring up our VmWare ESX cluster. Gained experience setting up 
+                                        virtual machines on the cluster and networking virtual machines together to create a testbed
+                                    </h4>
+                                </li>
+                                <h4 class='project-title'>Agile</h4>
+                                <li>
+                                    <h4>
+                                        Acted as the team scrum master and was responsible for sprint planning, project planning, checkins, and retrospectives
+                                    </h4>
+                                </li>
+                                <h4 class='project-title'>Training Certifications</h4>
+                                <ul>
+                                    <li>
+                                        <h4>CI/CD and DevOps</h4>
+                                    </li>
+                                    <li>
+                                        <h4>NodeJS and Microservices Design</h4>
+                                    </li>
+                                    <li>
+                                        <h4>Kubernetes Foundations</h4>
+                                    </li>
+                                    <li>
+                                        <h4>Cisco Secure Development Life Cycle (CSDLC)</h4>
+                                    </li>
+                                    <li>
+                                        <h4>Cisco Security White Belt</h4>
+                                    </li>
+                                    <li>
+                                        <h4>Cisco Security White Belt Advanced</h4>
+                                    </li>
+                                    <li>
+                                        <h4>Cisco Security Green Belt</h4>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class='work-description'>
+                            <h2>Akamai Technologies</h2>
+                            <h2>Software Engineer (Internship)</h2>
+                            <h3>Cambridge, Massachusetts</h3>
+                            <h3>May 2018 - September 2018</h3>
+                            <ul>
+                                <li>
+                                    <h4>
+                                        Worked with the network systems team on integrating the IP address management (IPAM) system with the router configuration manager (RCM) system
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        Developed RESTful APIs in Python using the Flask framework that push and pull router JSON configuration files to and from Git repositories. Also 
+                                        wrote scripts that parse router configuration files and model configuration changes in a mysql database. After that, I created tests for the API 
+                                        resource in Python and used the mocking library to simulate back-end database interactions
+                                    </h4>
+                                </li>
+                                <li>
+                                    <h4>
+                                        Lastly, I developed Perl scripts that parse internet route registry (IRR) dumps and import internet routes into the IPAM database after verifying the validity of the routes
+                                    </h4>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class='work-description'>
+                        <h2>North Carolina State University</h2>
+                        <h2>Security Researcher</h2>
+                        <h3>Raleigh, North Carolina</h3>
+                        <h3>September 2017 - December 2018</h3>
+                        <h4>
+                            What started as a grad school course project turned into three semesters worth of security research. Worked with Dr. Muhammad Shahzad on a paper called “Distributed Authentication Methods for ARP Cache Poisoning Mitigation”. The paper can be found <a href='/assets/arp_p2p.pdf' target='_blank'>here</a>
+                        </h4>
+                    </div>
+                    <div class='work-description'>
+                        <h2>Converged Network Solutions</h2>
+                        <h2>Network Engineer (Internship)</h2>
+                        <h3>Beirut, Lebanon</h3>
+                        <h3>May 2017 - August 2017</h3>
+                        <h4>
+                            Worked with the networking team on configuring Cisco routers and switches. Also created lab topologies and tested switch security features. Wrote a RESTful API in Java using the Spring framework that automated the generation of configuration files for Cisco devices
+                        </h4>
+                    </div>
+                </div>
+            </section>
+            <section class='education-section'>
+                <div class='row h-100'>
+                    <div class='col align-self-center work-wrapper'>
+                        <h1>Education</h1>
+                        <div class='education-description'>
+                            <h2>North Carolina State University</h2>
+                            <h3>Master’s of Science in Computer Science</h3>
+                            <h3>Raleigh, North Carolina</h3>
+                            <h3>August 2017 - December 2018</h3>
+                            <h4 class='course-type'>Networking Courses Taken:</h4>
+                            <ul>
+                                <li>
+                                    <h4>Computer Networking</h4>
+                                </li>
+                                <li>
+                                    <h4>Internet Protocols</h4>
+                                </li>
+                                <li>
+                                    <h4>IOT Applications and Implementations</h4>
+                                </li>
+                                <li>
+                                    <h4>Computer and Network Security</h4>
+                                </li>
+                                <li>
+                                    <h4>Switched Network Management</h4>
+                                </li>
+                            </ul>
+                            <h4 class='course-type'>Software Courses Taken:</h4>
+                            <ul>
+                                <li>
+                                    <h4>Design and Analysis of Algorithms</h4>
+                                </li>
+                                <li>
+                                    <h4>Software Engineering</h4>
+                                </li>
+                                <li>
+                                    <h4>Automated Program Patch Repair</h4>
+                                </li>
+                            </ul>
+                            <h4 class='course-type'>Virtualization Courses Taken:</h4>
+                            <ul>
+                                <li>
+                                    <h4>Linux Networking</h4>
+                                </li>
+                                <li>
+                                    <h4>Software Designed Networking</h4>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class='education-description'>
+                            <h2>American University of Beirut</h2>
+                            <h3>Bachelor’s of Engineering in Computer and Communication Engineering</h3>
+                            <h3>Beirut, Lebanon</h3>
+                            <h3>September 2013 - May 2017</h3>
+                            <h4 class='course-type'>Math Courses Taken:</h4>
+                            <ul>
+                                <li>
+                                    <h4>Calculus III</h4>
+                                </li>
+                                <li>
+                                    <h4>Discrete Mathematics</h4>
+                                </li>
+                                <li>
+                                    <h4>Differential Equations</h4>
+                                </li>
+                                <li>
+                                    <h4>Linear Algebra</h4>
+                                </li>
+                                <li>
+                                    <h4>Probability and Random Variables</h4>
+                                </li>
+                                <li>
+                                    <h4>Numerical Computing</h4>
+                                </li>
+                            </ul>
+                            <h4 class='course-type'>Circuit and Signal Processing Courses Taken:</h4>
+                            <ul>
+                                <li>
+                                    <h4>Electric Circuits</h4>
+                                </li>
+                                <li>
+                                    <h4>Analog Signal Processing</h4>
+                                </li>
+                                <li>
+                                    <h4>Electroncis</h4>
+                                </li>
+                                <li>
+                                    <h4>Electroncis Lab</h4>
+                                </li>
+                                <li>
+                                    <h4>Signals and Systems</h4>
+                                </li>
+                                <li>
+                                    <h4>Electric Machines and Power Fundamentals</h4>
+                                </li>
+                                <li>
+                                    <h4>Electromagnetics</h4>
+                                </li>
+                                <li>
+                                    <h4>Electric System Integration Lab</h4>
+                                </li>
+                                <li>
+                                    <h4>Communication Systems</h4>
+                                </li>
+                                <li>
+                                    <h4>Communication Systems Lab</h4>
+                                </li>
+                            </ul>
+                            <h4 class='course-type'>Computer Architecture Courses Taken:</h4>
+                            <ul>
+                                <li>
+                                    <h4>Digital System Design</h4>
+                                </li>
+                                <li>
+                                    <h4>Computer Organization</h4>
+                                </li>
+                                <li>
+                                    <h4>Computer Organization Lab</h4>
+                                </li>
+                                <li>
+                                    <h4>Computer Architecture</h4>
+                                </li>
+                                <li>
+                                    <h4>Parallel Computer Architecture</h4>
+                                </li>
+                            </ul>
+                            <h4 class='course-type'>Software Courses Taken:</h4>
+                            <ul>
+                                <li>
+                                    <h4>Introduction To Programming</h4>
+                                </li>
+                                <li>
+                                    <h4>Data Structures and Algorithms</h4>
+                                </li>
+                                <li>
+                                    <h4>Database Systems</h4>
+                                </li>
+                                <li>
+                                    <h4>Data Mining</h4>
+                                </li>
+                                <li>
+                                    <h4>Web Programming and Design</h4>
+                                </li>
+                            </ul>
+                            <h4 class='course-type'>Security Courses Taken:</h4>
+                            <ul>
+                                <li>
+                                    <h4>Cryptography and Network Security</h4>
+                                </li>
+                                <li>
+                                    <h4>Internet Security</h4>
+                                </li>
+                            </ul>
+                            <h4 class='course-type'>Networking Courses Taken:</h4>
+                            <ul>
+                                <li>
+                                    <h4>Computer Networking</h4>
+                                </li>
+                                <li>
+                                    <h4>Computer Networking Lab</h4>
+                                </li>
+                                <li>
+                                    <h4>Mobile Networks and Applications</h4>
+                                </li>
+                                <li>
+                                    <h4>Queueing Theory</h4>
+                                </li>
+                            </ul>
+
+                        </div>    
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+           <p>Omar Chedid &copy; 2020 All Right Reserved.</p>
+        </footer>
+    </body>
+</html>

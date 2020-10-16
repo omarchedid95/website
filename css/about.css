@@ -1,0 +1,252 @@
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 48px;
+    text-align: center;
+}
+.current-role-section h2 {
+    font-size: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.current-role-section h2 a{
+    text-decoration: none;
+    color: #e63946;
+}
+.current-role-section.active-section h2 {
+    animation-name: enterRight;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.work-section .work-description {
+    color: #003049;
+    background-color: #b2deec;
+    width: 700px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 24px;
+    border-radius: 24px;
+}
+.work-section .work-description a {
+    text-decoration: none;
+    color: #e63946;
+}
+.work-section .work-description  h4 {
+    padding-top: 24px;
+}
+.work-section .work-description .project-title{
+    text-align: center;
+    text-decoration: underline;
+}
+.work-section .work-description  ul {
+    padding-top: 24px;
+}
+.work-section .work-description  ul h4{
+    padding-top: 24px;
+}
+.work-section .work-description  ul li{
+    margin-bottom: 40px;
+}
+.education-section .education-description {
+    color: #003049;
+    background-color: #b2deec;
+    width: 700px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 24px;
+    border-radius: 24px;
+}
+.education-section .course-type {
+    text-decoration: underline;
+    padding-top: 24px;
+    text-align: center;
+}
+.education-section .education-description a {
+    color: #e63946;
+}
+.education-section .education-description  ul {
+    padding-top: 24px;
+}
+/* ----------- iPhone X ----------- */
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px)
+and (-webkit-device-pixel-ratio : 3)
+{
+    h2 {
+        font-size: 40px;
+    }
+    .current-role-section h2 {
+        padding-top: 48px;
+        width: 350px;
+    }
+    .work-section {
+        padding: none;
+        margin: none;
+    }
+    .work-section h1 {
+        position: relative;
+        right: 25px;
+        width: 350px;
+        font-size: 60px;
+    }
+    .work-section .work-description {
+        width: 350px;
+    }
+    .education-section h1 {
+        width: 350px;
+        font-size: 60px;
+    }
+    .education-section .education-description {
+        width: 350px;
+    }
+}
+/* ----------- iPhone 6,7,8 Plus ----------- */
+@media only screen 
+and (device-width : 414px) 
+and (device-height : 736px)
+{
+    h2 {
+        font-size: 40px;
+    }
+    .current-role-section h2 {
+        padding-top: 48px;
+        width: 350px;
+    }
+    .work-section {
+        padding: none;
+        margin: none;
+    }
+    .work-section h1 {
+        width: 400px;
+        font-size: 60px;
+    }
+    .work-section .work-description {
+        width: 380px;
+    }
+    .education-section h1 {
+        width: 400px;
+        font-size: 60px;
+    }
+    .education-section .education-description {
+        width: 380px;
+    }
+}
+/* ----------- iPhone 6,7,8 ----------- */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-height : 667px)
+{
+    h2 {
+        font-size: 40px;
+    }
+    .current-role-section h2 {
+        padding-top: 48px;
+        width: 350px;
+    }
+    .work-section {
+        padding: none;
+        margin: none;
+    }
+    .work-section h1 {
+        width: 375px;
+        font-size: 50px;
+    }
+    .work-section .work-description {
+        width: 350px;
+    }
+    .education-section h1 {
+        width: 375px;
+        font-size: 50px;
+    }
+    .education-section .education-description {
+        width: 350px;
+    }
+}
+/* ----------- iPhone 5,5s ----------- */
+@media only screen 
+and (device-width : 320px) 
+and (device-height : 568px)
+{
+    h2 {
+        font-size: 40px;
+    }
+    .current-role-section h2 {
+        padding-top: 48px;
+        width: 300px;
+    }
+    .work-section {
+        padding: none;
+        margin: none;
+    }
+    .work-section h1 {
+        position: relative;
+        right: 24px;
+        width: 300px;
+        font-size: 50px;
+    }
+    .work-section .work-description {
+        overflow-x: scroll;
+        width: 300px;
+    }
+    .education-section h1 {
+        position: relative;
+        right: 24px;
+        width: 300px;
+        font-size: 50px;
+    }
+    .education-section .education-description {
+        overflow-x: scroll;
+        width: 300px;
+    }
+}
+/* ----------- iPhone 4,4s ----------- */
+@media only screen 
+and (device-width : 320px) 
+and (device-height : 480px)
+{
+    h2 {
+        font-size: 40px;
+    }
+    .current-role-section h2 {
+        padding-top: 48px;
+        width: 300px;
+    }
+    .work-section {
+        padding: none;
+        margin: none;
+    }
+    .work-section h1 {
+        position: relative;
+        right: 24px;
+        width: 300px;
+        font-size: 50px;
+    }
+    .work-section .work-description {
+        overflow-x: scroll;
+        width: 290px;
+    }
+    .education-section h1 {
+        position: relative;
+        right: 24px;
+        width: 300px;
+        font-size: 50px;
+    }
+    .education-section .education-description {
+        overflow-x: scroll;
+        width: 290px;
+    }
+}
