@@ -243,9 +243,8 @@
     color: #e63946;
 }
 @media only screen 
-and (device-width: 414px) 
-and (device-height: 896px) 
-and (-webkit-device-pixel-ratio: 3) { 
+and (max-width: 600px) 
+{ 
     .main-section {
         padding-top: 0px;
     }

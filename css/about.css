@@ -80,6 +80,34 @@ h1 {
 .education-section .education-description  ul {
     padding-top: 24px;
 }
+@media only screen 
+and (max-width: 600px) {
+    h2 {
+        font-size: 40px;
+    }
+    .current-role-section h2 {
+        padding-top: 48px;
+        width: 350px;
+    }
+    .work-section {
+        padding: none;
+        margin: none;
+    }
+    .work-section h1 {
+        width: 350px;
+        font-size: 60px;
+    }
+    .work-section .work-description {
+        width: 350px;
+    }
+    .education-section h1 {
+        width: 350px;
+        font-size: 60px;
+    }
+    .education-section .education-description {
+        width: 350px;
+    }
+}
 /* ----------- iPhone X ----------- */
 @media only screen 
 and (device-width : 375px) 
