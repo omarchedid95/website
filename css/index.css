@@ -242,6 +242,91 @@
     text-decoration: none;
     color: #e63946;
 }
+@media only screen 
+and (device-width: 414px) 
+and (device-height: 896px) 
+and (-webkit-device-pixel-ratio: 3) { 
+    .main-section {
+        padding-top: 0px;
+    }
+    .main-section .title {
+        font-size: 65px;
+    }
+    .main-section img.avatar {
+        margin-top: 40px;
+        width: 350px;
+    }
+    .main-section .introduction p {
+        width: 360px;
+        font-size: 24px;
+    }
+    .help-section h2 {
+        width: 375px;
+    }
+    .help-section h2:nth-of-type(2)::before {
+        font-size: 60px;
+    }
+    .services-section {
+        padding: 0px;
+    }
+    .services-section h2 {
+        padding-top: 20px;
+        font-size: 50px;
+    }
+    .services-section .services-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .services-section .services-container .service-container {
+        width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .services-section .services-container .service-container h4 {
+        font-size: 22px;
+        padding-top: 24px;
+    }
+    .technologies-section {
+        padding: 0px;
+    }
+    .technologies-section h2 {
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    .technologies-section .technologies-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .technologies-section .technologies-container .technology-container {
+        width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .technologies-section .technologies-container .technology-container h4 {
+        font-size: 22px;
+        padding-top: 24px;
+    }
+    .information-section {
+        padding: 0px;
+    }
+    .information-section h2 {
+        width: 330px;
+        overflow-y: scroll;
+        font-size: 40px;
+    }
+    .reach-section {
+        padding: 0px;
+    }
+    .reach-section h2 {
+        width: 330px;
+        overflow-y: scroll;
+        font-size: 40px;
+    }
+}
 /* ----------- iPhone X ----------- */
 @media only screen 
 and (device-width : 375px) 

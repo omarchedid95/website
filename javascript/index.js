@@ -23,7 +23,8 @@ $(document).ready(() => {
     sections.forEach(section => observer.observe(section));
 
     function isMobile(width, height) {
-        if (width == 375 && height == 812 ||
+        if (width == 414 && height == 896 ||
+            width == 375 && height == 812 ||
             width == 414 && height == 736 ||
             width == 375 && height == 667 ||
             width == 320 && height == 568 ||

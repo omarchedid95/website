@@ -89,21 +89,21 @@ footer p {
 }
 /* ----------- iPhone 11 Pro Max-------- */
 @media only screen 
-    and (device-width: 414px) 
-    and (device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 3) { 
-        main {
-            top: 0px;
-            width: 375px;
-            height: 780px;
-        }
-        main section {
-            padding-left: 4px;
-            padding-right: 4px;
-            overflow-x: hidden;
-            width: 375px !important;
-        }
+and (device-width: 414px) 
+and (device-height: 896px) 
+and (-webkit-device-pixel-ratio: 3) { 
+    main {
+        top: 0px;
+        width: 414px;
+        height: 896px;
     }
+    main section {
+        padding-left: 4px;
+        padding-right: 4px;
+        overflow-x: hidden;
+        width: 375px !important;
+    }
+}
 /* ----------- iPhone X ----------- */
 @media only screen 
 and (device-width : 375px) 
