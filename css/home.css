@@ -259,6 +259,9 @@ and (min-width: 330px)
     .help-section h2:nth-of-type(2)::before {
         font-size: 60px;
     }
+    .services-wrapper {
+        padding: 0;
+    }
     .services-section {
         padding: 24px;
     }
