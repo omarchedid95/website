@@ -97,8 +97,7 @@ and (max-width: 600px)
         top: 0px;
     }
     main section {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: 24px;
         overflow-x: hidden;
         width: 100% !important;
     }

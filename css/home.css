@@ -136,9 +136,7 @@
     margin-bottom: 80px;
     margin-left: 80px;
     margin-right: 80px;
-    padding-top: 24px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 40px;
     border-radius: 24px;
     overflow-y: scroll;
     background-color: #b2deec;
@@ -262,17 +260,14 @@ and (min-width: 330px)
         font-size: 60px;
     }
     .services-section {
-        padding: 0px;
+        padding: 24px;
     }
     .services-section h2 {
         width: 100%;
-        padding-top: 20px;
         font-size: 50px;
     }
     .services-section .services-container {
-        padding-top: 16px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 24px;
     }
     .services-section .services-container .service-container {
         margin-left: auto;
@@ -280,38 +275,36 @@ and (min-width: 330px)
         margin-bottom: 40px;
     }
     .technologies-section {
-        padding: 0px;
+        padding: 24px;
     }
     .technologies-section h2 {
-        padding-top: 20px;
+        width: 100%;
         font-size: 40px;
     }
     .technologies-section .technologies-container {
-        padding-top: 16px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 24px;
     }
     .technologies-section .technologies-container .technology-container {
-        width: 330px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
     }
     .technologies-section .technologies-container .technology-container h4 {
         font-size: 22px;
-        padding-top: 24px;
     }
     .information-section {
-        padding: 0px;
+        padding: 24px;
     }
     .information-section h2 {
         width: 100%;
+        font-size: 50px;
     }
     .reach-section {
-        padding: 0px;
+        padding: 24px;
     }
     .reach-section h2 {
         width: 100%;
+        font-size: 50px;
     }
 }
 @media only screen 
@@ -333,62 +326,45 @@ and (max-width: 330px) {
         font-size: 50px;
     }
     .services-section {
-        padding: 0px;
+        padding: 18px;
     }
     .services-section h2 {
         width: 100%;
-        padding-top: 20px;
         font-size: 50px;
     }
     .services-section .services-container {
-        padding-top: 16px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 18px;
     }
     .services-section .services-container .service-container {
-        margin: 0;
         min-width: auto;
-        width: 300px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
     }
     .technologies-section {
-        padding: 0px;
+        padding: 24px;
     }
     .technologies-section h2 {
-        width: 80%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 20px;
         font-size: 40px;
     }
     .technologies-section .technologies-container {
-        padding-top: 16px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 24px;
     }
     .technologies-section .technologies-container .technology-container {
         margin: 0;
         min-width: auto;
-        width: 300px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
     }
     .technologies-section .technologies-container .technology-container h4 {
         font-size: 22px;
-        padding-top: 24px;
-    }
-    .information-section {
-        padding: 0px;
     }
     .information-section h2 {
         width: 100%;
         font-size: 40px;
-    }
-    .reach-section {
-        padding: 0px;
     }
     .reach-section h2 {
         width: 100%;
