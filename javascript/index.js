@@ -35,9 +35,9 @@ $(document).ready(() => {
     }
 
     // Remove the desktop menu for any mobile device
-    if (isMobile(width, height)) {
-        $('header').remove();
-    }
+    // if (isMobile(width, height)) {
+    //     $('header').remove();
+    // }
 
     // iPhone X
     if (width == 375 && height == 812) {

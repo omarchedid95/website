@@ -1,0 +1,397 @@
+.main-section {
+    width: 1000px;
+}
+.main-section.active-section .title {
+    animation-name: enterLeft;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.main-section .title {
+    font-size: 80px;
+    text-align: center;
+}
+.main-section img.avatar {
+    width: 400px;
+    border-radius: 50%;
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: none;
+    box-shadow: 0px 0px 10px 12px rgba(0,0,0);
+    box-shadow: 0px 0px 10px 12px rgba(0,0,0,0.2);
+}
+.main-section.active-section img.avatar {
+    animation-name: float;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.main-section.active-section .avatar-wrapper {
+    animation-name: appear;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.main-section .introduction {
+    margin-top: 16px;
+}
+.main-section.active-section .introduction {
+    animation-name: enterRight;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.main-section .introduction p {
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    border-radius: 24px;
+}
+.main-section .introduction span {
+    color: #e63946;
+}
+.help-section.active-section .help-wrapper {
+    animation-name: enterRight;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.help-section h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.help-section .help-type::before {
+    content: 'design';
+    color: #e63946;
+    animation-name: changeHelp;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-size: 85px;
+    font-weight: bold;
+}
+@keyframes changeHelp {
+    0%   {
+        content: 'design';
+    }
+    10% {
+        content: 'develop';
+    }
+    20%  {
+        content: 'build';
+    }
+    30% {
+        content: 'test';
+    }
+    40%  {
+        content: 'containerize';
+    }
+    50% {
+        content: 'secure';
+    }
+    60%  {
+        content: 'deploy';
+    }
+    70% {
+        content: 'scale';
+    }
+    80%  {
+        content: 'maintain';
+    }
+    90% {
+        content: 'debug';
+    }
+    100% {
+
+    }
+}
+.services-section {
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.services-section.active-section .services-wrapper {
+    animation-name: enterLeft;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.services-section .services-container {
+    padding-top: 100px;
+}
+.services-section .services-container .service-container {
+    height: 500px;
+    min-width: 350px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 24px;
+    overflow-y: scroll;
+    background-color: #b2deec;
+    color: #003049;
+}
+.services-section.active-section .service-container {
+    transition-duration: 0.6s;
+    transition-property: box-shadow, transform;
+    transform: translateY(0px);
+    box-shadow: none;
+}
+.services-section .service-container:hover {
+    box-shadow: 5px 5px 50px black;
+    transform: translateY(-20px);
+}
+.services-section .service-container img {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+.services-section .service-container h4 {
+    padding-top: 40px;
+}
+.technologies-section {
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.technologies-section.active-section .technologies-wrapper {
+    animation-name: enterBottom;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.technologies-section .technologies-container {
+    padding-top: 100px;
+}
+.technologies-section .technologies-container .technology-container {
+    height: 400px;
+    min-width: 350px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    padding-top: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 24px;
+    overflow-y: scroll;
+    background-color: #b2deec;
+    color: #003049;
+}
+.technologies-section.active-section .technology-container {
+    transition-duration: 0.6s;
+    transition-property: box-shadow, transform;
+    transform: translateY(0px);
+    box-shadow: none;
+}
+.technologies-section .technology-container:hover {
+    box-shadow: 5px 5px 50px black;
+    transform: translateY(-20px);
+}
+.technologies-section .technologies-container .technology-container img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+.technologies-section .technologies-container .technology-container h4{
+    padding-top: 40px;
+}
+.information-section.active-section .information-wrapper{
+    animation-name: enterRight;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.information-section h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.information-section h2 a{
+    text-decoration: none;
+    color: #e63946;
+}
+.reach-section.active-section .reach-wrapper{
+    animation-name: enterLeft;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.reach-section h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.reach-section h2 a{
+    text-decoration: none;
+    color: #e63946;
+}
+@media only screen 
+and (max-width: 600px)
+and (min-width: 330px)
+{
+    .main-section .title {
+        font-size: 60px;
+    }
+    .main-section img.avatar {
+        width: 95%;
+    }
+    .main-section .introduction p {
+        font-size: 24px;
+    }
+    .help-section h2 {
+        width: 100%;
+    }
+    .help-section h2:nth-of-type(2)::before {
+        font-size: 60px;
+    }
+    .services-section {
+        padding: 0px;
+    }
+    .services-section h2 {
+        width: 100%;
+        padding-top: 20px;
+        font-size: 50px;
+    }
+    .services-section .services-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .services-section .services-container .service-container {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .technologies-section {
+        padding: 0px;
+    }
+    .technologies-section h2 {
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    .technologies-section .technologies-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .technologies-section .technologies-container .technology-container {
+        width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .technologies-section .technologies-container .technology-container h4 {
+        font-size: 22px;
+        padding-top: 24px;
+    }
+    .information-section {
+        padding: 0px;
+    }
+    .information-section h2 {
+        width: 100%;
+    }
+    .reach-section {
+        padding: 0px;
+    }
+    .reach-section h2 {
+        width: 100%;
+    }
+}
+@media only screen 
+and (max-width: 330px) {
+    .main-section .title {
+        font-size: 60px;
+    }
+    .main-section img.avatar {
+        width: 95%;
+    }
+    .main-section .introduction p {
+        font-size: 24px;
+    }
+    .help-section h2 {
+        font-size: 40px;
+        width: 100%;
+    }
+    .help-section h2:nth-of-type(2)::before {
+        font-size: 50px;
+    }
+    .services-section {
+        padding: 0px;
+    }
+    .services-section h2 {
+        width: 100%;
+        padding-top: 20px;
+        font-size: 50px;
+    }
+    .services-section .services-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .services-section .services-container .service-container {
+        margin: 0;
+        min-width: auto;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .technologies-section {
+        padding: 0px;
+    }
+    .technologies-section h2 {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    .technologies-section .technologies-container {
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .technologies-section .technologies-container .technology-container {
+        margin: 0;
+        min-width: auto;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .technologies-section .technologies-container .technology-container h4 {
+        font-size: 22px;
+        padding-top: 24px;
+    }
+    .information-section {
+        padding: 0px;
+    }
+    .information-section h2 {
+        width: 100%;
+        font-size: 40px;
+    }
+    .reach-section {
+        padding: 0px;
+    }
+    .reach-section h2 {
+        width: 100%;
+        font-size: 40px;
+    }
+}
